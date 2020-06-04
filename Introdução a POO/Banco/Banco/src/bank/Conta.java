@@ -58,7 +58,7 @@ public class Conta {
     }
 
     public String toString() {
-        return "\n\nNúmero da conta: " + number + "\n" + "\n\nNome do proprietário da conta: " + username + "\n"
+        return "\n\nNúmero da conta: " + getNumber() + "\n" + "\n\nNome do proprietário da conta: " + getUsername() + "\n"
                 + "\n\nSaldo: " + NumberFormat.getCurrencyInstance().format(balance);
     }
 }
