@@ -8,12 +8,11 @@ public class Conta {
     private int number;
     private String username;
     private double balance;
-    public double value;
 
-    public Conta(int number, String username, double value) {
+    public Conta(int number, String username, double initialDeposit) {
         this.number = number;
         this.username = username;
-        this.value = value;
+        deposit(initialDeposit);
     }
 
     public Conta(int number, String username) {
@@ -37,23 +36,23 @@ public class Conta {
         return balance;
     }
 
-    public void deposit(double value) {
-        balance += value;
+    public void deposit(double amount) {
+        balance += amount;
     }
 
-    public void withdraw(double value) {
-        if (balance < value + 5) {
+    public void withdraw(double amount) {
+        if (balance < amount + 5) {
 
             int resposta = JOptionPane.showConfirmDialog(null,
                     "Tem certeza de que deseja realizar um saque?\nComo a sua conta não possui saldo suficiente para realizar essa operação, se continuar com esse saque você entrará no cheque especial.");
 
             if (resposta == JOptionPane.YES_OPTION) {
 
-                balance -= value + 5;
+                balance -= amount + 5;
             }
         } else {
 
-            balance -= value + 5;
+            balance -= amount + 5;
         }
     }
 
