@@ -33,7 +33,6 @@ public class Principal {
 				if (resposta == JOptionPane.YES_OPTION) {
 					valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor do depósito inicial"));
 					conta = new Conta(numero, nome, valor);
-					conta.deposit(valor);
 				}
 
 				else {
