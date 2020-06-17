@@ -22,7 +22,7 @@ public class Vetor {
             soma += vect[i];
         }
 
-        JOptionPane.showMessageDialog(null, "Valor da média entre os números informados = " + String.format("%.2f", soma/3));
+        JOptionPane.showMessageDialog(null, "Valor da média entre os números informados = " + String.format("%.2f", soma/n));
 
     }
 }
