@@ -15,14 +15,14 @@ public class Vetor {
 
         double[] vect = new double[n];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < vect.length; i++) {
             vect[i] = Double
                     .parseDouble(JOptionPane.showInputDialog("Informe os números desejados para se calcular a média."));
 
             soma += vect[i];
         }
 
-        JOptionPane.showMessageDialog(null, "Valor da média entre os números informados = " + String.format("%.2f", soma/n));
+        JOptionPane.showMessageDialog(null, "Valor da média entre os números informados = " + String.format("%.2f", soma/vect.length));
 
     }
 }
