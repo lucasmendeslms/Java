@@ -43,7 +43,7 @@ public class Funcionarios {
     }
 
     public String toString() {
-        return "\nID: " + getId() + "\nNome: " + getName() + "\nSalário atualizado: "
-                + NumberFormat.getCurrencyInstance().format(salary);
+        return "ID: " + getId() + "\nNome: " + getName() + "\nSalário: "
+                + NumberFormat.getCurrencyInstance().format(salary) + "\n";
     }
 }
