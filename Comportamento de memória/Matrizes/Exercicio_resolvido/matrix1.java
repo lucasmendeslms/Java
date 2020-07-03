@@ -33,6 +33,25 @@ public class matrix1 {
 
         JOptionPane.showMessageDialog(null, matriz);
 
+        matriz = "";
+        for (int i = 0; i < mat.length; i++) {
+            matriz += Integer.toString(mat[i][i]);
+            matriz += " ";
+        }
+
+        JOptionPane.showMessageDialog(null, "Diagonal Principal: \n" + matriz);
+
+        int count = 0;
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+
+                if (mat[i][j] < 0) {
+                    count++;
+                }
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "Números negativos = " + count);
     }
 
 }
