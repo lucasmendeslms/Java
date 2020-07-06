@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
+import java.text.NumberFormat;
 
 import Exercicio_resolvido_01.entidades.enums.WorkerLevel;
 import Exercicio_resolvido_01.entidades.*;
@@ -33,7 +34,7 @@ public class Program {
         for (int i = 1; i <= n; i++) {
             JOptionPane.showMessageDialog(null, "Informe os dados do contrato #" + i);
 
-            Date contractDate = sdf.parse(JOptionPane.showInputDialog("Informe a data do contrato."));
+            Date contractDate = sdf.parse(JOptionPane.showInputDialog("Informe a data do contrato (DD/MM/YYYY)."));
 
             double valuePerHour = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor recebido por hora."));
 
@@ -43,7 +44,16 @@ public class Program {
             worker.addContract(contract);
         }
 
-        
+        String monthAndYear = JOptionPane
+                .showInputDialog("Informe o mês e o ano para calcular o valor do salário recebido (MM/YYYY).");
+
+        int month = Integer.parseInt(monthAndYear.substring(0, 2));
+        int year = Integer.parseInt(monthAndYear.substring(3));
+
+        JOptionPane.showMessageDialog(null,
+                "Nome do funcionário: " + worker.getName() + "\nDepartamento: " + worker.getDepartment().getName()
+                        + "\nSalário na data " + monthAndYear + ": "
+                        + NumberFormat.getCurrencyInstance().format(worker.income(year, month)));
 
     }
 
