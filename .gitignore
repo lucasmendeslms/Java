@@ -1,0 +1,8 @@
+
+Teste/.classpath
+Teste/.settings/org.eclipse.jdt.core.prefs
+Teste/bin/app/Conta.class
+Teste/bin/app/Funcionario.class
+*.class
+Teste/Teste/.classpath
+Teste/.project
