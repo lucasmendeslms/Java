@@ -48,7 +48,7 @@ public class Program {
 
         }
 
-        JOptionPane.showMessageDialog(null, " " + publicacao);
+        JOptionPane.showMessageDialog(null, "" + publicacao);
 
     }
 
