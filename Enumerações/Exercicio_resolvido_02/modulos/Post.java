@@ -30,10 +30,6 @@ public class Post {
         return moment;
     }
 
-    // public void setMoment(Date moment){
-    // this.moment = moment;
-    // }
-
     public String getTitle() {
         return title;
     }
