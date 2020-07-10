@@ -6,15 +6,11 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-//import java.text.SimpleDateFormat;
-
 import java.util.Random;
 
 public class Program {
 
     public static void main(String[] args) {
-
-        // SimpleDateFormat dataHora = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
         JOptionPane.showMessageDialog(null, "No que você está pensando?");
 
