@@ -69,7 +69,7 @@ public class Program {
             } while (resposta == JOptionPane.YES_OPTION);
 
         } else {
-                JOptionPane.showMessageDialog(null, "Volte sempre... Até logo :)");
+            JOptionPane.showMessageDialog(null, "Volte sempre... Até logo :)");
         }
     }
 
